@@ -1,0 +1,7 @@
+####  ALINEMIENTO DE MEGA
+ 
+BiocManager::install("ggmsa")
+
+library (ggmsa)
+
+available_msa ("alin.fas") -> alineamiento

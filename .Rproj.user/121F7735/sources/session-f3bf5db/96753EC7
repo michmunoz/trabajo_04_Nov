@@ -1,26 +1,26 @@
 {
-    "id": "7ABDD3E6",
-    "path": "~/Muñoz_DanielaMichelle_T2/Scripts/P5.R",
+    "id": "96753EC7",
+    "path": "~/BIOINFORMATICA/msa.R",
     "project_path": null,
     "type": "r_source",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1730755709963.0,
+    "created": 1730756630820.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "65,0",
-        "scrollLine": "51"
+        "cursorPosition": "3,20",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1728276302,
+    "lastKnownWriteTime": 1727729311,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1728276302,
+    "last_content_update": 1727729311,
     "read_only": false,
     "read_only_alternatives": []
 }

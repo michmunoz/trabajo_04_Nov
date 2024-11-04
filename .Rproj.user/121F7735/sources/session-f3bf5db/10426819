@@ -1,11 +1,11 @@
 {
     "id": "10426819",
-    "path": null,
-    "project_path": null,
+    "path": "~/trabajo_04_Nov/scripts/todo completo.R",
+    "project_path": "scripts/todo completo.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "361814205",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1730753776460.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "34"
     },
     "folds": "",
-    "lastKnownWriteTime": 8031079694196110195,
-    "encoding": "",
+    "lastKnownWriteTime": 1730756514,
+    "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1730756193741,
+    "last_content_update": 1730756514990,
     "read_only": false,
     "read_only_alternatives": []
 }
