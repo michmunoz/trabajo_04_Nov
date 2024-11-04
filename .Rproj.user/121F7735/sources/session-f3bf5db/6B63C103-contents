@@ -1,0 +1,37 @@
+### INSTALAR BIOCONDUCTOR
+
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.19")
+
+#### EJERCICIOS DE NOTAS DE R
+
+edades <- c(35,35,70,17,14) #Definimos un vector llamado "edades"
+nombres <- c("Jerry","Beth","Rick", "Summer","Morty") #Definimos un vector llamado "edades", del mismo tamaño que "edades"
+
+names(edades) <- nombres #Se nombran los elementos del vector "edades"
+edades
+
+
+edades[3]
+edades[c("Rick","Morty")]
+
+e1 <- edades [c(1,3,4,5)]
+e1
+mean (e1)
+
+sort (edades[-length(edades)]) -> sinM
+sinM
+
+
+any (edades > 75)
+any (edades < 12)
+any (edades > 12 & edades < 20)
+
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.19")
+
+

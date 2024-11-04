@@ -1,0 +1,48 @@
+#### ALINEAMIENTO MULTIPLEEE ###
+
+library(BiocManager)
+library (Biostrings)
+library (BSgenome.Ecoli.NCBI.20080805)
+library(msa)
+
+### AQUI FALTA RECORTAR CADA SECUENCIA CON [] PARA QUE CORRA MAS RAPIDO
+
+NC_008253 <- BSgenome.Ecoli.NCBI.20080805$NC_008253
+NC_008253
+
+AA1 <- translate (NC_008253)
+AA1
+
+
+NC_002695 <- BSgenome.Ecoli.NCBI.20080805$NC_002695
+NC_002695
+
+AA2 <- translate (NC_002695)
+AA2
+
+NC_009801 <- BSgenome.Ecoli.NCBI.20080805$NC_009801
+NC_009801 
+
+AA3 <- translate (NC_009801)
+AA3
+
+
+multi<- AAStringSet (c (AA1, AA2, AA3))
+multi
+
+
+multi<- AAStringSet (list (AA1, AA2, AA3))
+multi
+
+aling1 <- msa (multi)
+aling1
+
+
+BiocManager::install("ggmsa")
+
+
+
+
+
+
+

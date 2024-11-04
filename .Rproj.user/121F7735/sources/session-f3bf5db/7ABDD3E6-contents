@@ -1,0 +1,73 @@
+###############################
+#### ALINEAMIENTO MÚLTIPLE ####
+###############################
+
+
+##Elabora un programa en R que a partir de un archivo FASTA concatenado de secuencias
+#que se anexa a esta actividad haga lo siguiente:
+
+library (Biostrings)
+library(msa)
+
+sec <- readDNAStringSet("RawData/FASTA.fa")
+sec
+
+#(a) El número de veces que aparece la secuencia GATTACA
+
+vcountPattern("GATTACA", sec)
+
+## esta funcion nos despliega el número de veces que aparece el patrón introducido
+# se antepone la letra v para idicar que es un archivo integrado por mas de una secuencia
+## en este caso no se permitió ningún mismatch al momento de realizar la secuencia
+
+#(b) La secuencia traducida
+
+trans <- translate (sec, if.fuzzy.codon="solve")
+trans
+
+## "solve" permite traducir codones no comunes, estos se marcan como * en la secuencia
+
+#(c) El alineamiento múltiple por al menos dos algoritmos distintos para la secuencia de AA
+
+## alineamiento por Muscle
+
+aling1 <- msa (trans, method = "Muscle")
+aling1
+
+## alineamiento por Clustal W
+
+aling2 <- msa (trans, method = "ClustalW")
+aling2
+
+#(d) Una matriz de distancias de las secuencias
+
+## para esto es necesario el paquete "seqinr"
+
+install.packages("seqinr")
+library (seqinr)
+
+alineamiento <- msaConvert (aling2, type="seqinr::alignment")
+alineamiento
+
+dist <- dist.alignment(alineamiento, "identity")
+dist
+
+
+#(e) Un  ́arbol filogenético a partir de uno de los alineamientos
+
+install.packages("ape")
+library (ape)
+
+arbol <- nj (dist)
+
+pdf ("Resultados/árbolfilo.pdf")
+plot (arbol)
+dev.off() 
+
+
+
+
+
+
+
+

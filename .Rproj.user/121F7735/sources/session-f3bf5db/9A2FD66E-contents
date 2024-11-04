@@ -1,0 +1,59 @@
+#################
+#### PODERES ####
+#################
+
+
+##Elabora un programa que a partir del “poder” de diez personajes (ficticios o no) dado como
+#datos de entrada, genere un mensaje para cada uno de ellos que indique el mensaje “con un
+#gran poder conlleva una gran responsabilidad” si es que su “poder” es mayor que un valor
+#umbral que ustedes determinen de forma arbitraria. De tal forma que, si su personaje es
+#spider-man o-b-v-i-a-m-e-n-t-e, les arroje el mensaje del t ́ıo Ben.
+
+## Primero se definen los personajes y los poderes
+
+super <- data.frame(
+  personaje = c("Nemo", "Patricio", "Jonny Bravo", "Cosmo", "Rapunzel", "Homero",
+                "Angelica Pickles","Dexter","Blanca Nieves", "Spiderman"),
+  poder = c(12,78,347,298,231,56,542,789,362,788)
+  
+)
+
+super
+
+
+## Ahora se define el condicional según el personaje elejido
+
+super
+
+personaje <- (readline (prompt = "a partir del objeto super escoje tu personaje favorito: "))
+
+if ( (personaje == "nemo"| personaje == "Nemo" )) {
+  print ("tu poder es de 12, tu aleta feliz no te sirve de mucho...")
+} else if (( personaje == "patricio"| personaje == "Patricio"  )) {
+  print ("tienes 78 puntos de poder, deberías salir mas de tu piedra...")
+} else if ( ( personaje == "jonny bravo"| personaje == "Jonny Bravo" )) {
+  print ("tu poder es de 347, el gimnasio no es suficiente, hasta Blanca Nieves es mas fuerte que tu")
+} else if ((personaje == "homero"| personaje == "Homero" )) {
+  print ("ay Homero!, eres casi igual de débil que Nemo")
+} else if ((personaje == "Rapunzel"| personaje == "rapunzel" )) {
+  print ("Felicidades! puedes sobrevivir con tus 231 puntos de poder y tu largo cabello")
+}else if ((personaje == "cosmo"| personaje == "Cosmo" )) {
+  print ("tienes 298 puntos de poder, aunque todos sabemos que Wanda es mas poderosa")
+}else if ((personaje == "blanca nieves"| personaje == "Blanca Nieves" )) {
+  print ("comunicarte con los animales te hace mas fuerte que Jonny Bravo")
+}else if ((personaje == "angelica pickles"| personaje == "Angelica Pickles" )) {
+  print ("la manipulación da ciertas ventajas, tienes 542 puntos de poder")
+}else if ((personaje == "spiderman"| personaje == "Spiderman" )) {
+  print ("un gran poder conlleva una gran responsabilidad, pero aún con tus 788 puntos de poder no es suficiente")
+}else if ((personaje == "dexter"| personaje == "Dexter" )) {
+  print ("Dexter eres el mas poderoso!!!, tus 789 puntos de poder son gracias a tu bata de laboratorio")
+}
+
+
+
+
+
+
+
+
+
